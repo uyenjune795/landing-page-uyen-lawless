@@ -1,11 +1,23 @@
 /* My Styles */
+@import url(ranade.css);
+
 body {
+    background-color: #edeae3;
     text-align: center;
     align-items: center;
 }
 
 h1 {
-    font-size: 3vw;
+    padding-top: .8vw;
+    padding-bottom: .5vw;
+    color:#3f727a;
+    font-size: 4.5vw;
+    font-family: 'Ranade-Medium';
+    text-transform: uppercase;
+    border-bottom: .175vw solid #d6886e;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    margin-bottom: 5vw;
 }
 
 h1 a {
@@ -14,15 +26,20 @@ h1 a {
 
 p {
     text-align: center;
-    font-size: 1.2vw;
+    font-family: 'Ranade-Medium';
+    font-size: 1.25vw;
     margin: auto;
-    max-width: 40vw;
-    padding-top: 2vw;
+    max-width: 42vw;
+    padding-top: 2.2vw;
+    letter-spacing: -.02vw;
     padding-bottom: 2vw;
+    color: #4b4b4b;
+    line-height: 1.8vw;
 }
 
 img {
     max-width: 22%;
+    border-radius: 1vw;
 }
 
 nav {
@@ -33,16 +50,18 @@ nav {
 
 .button {
     border: .2vw solid #d6886e;
-    font-size: 2vw;
+    border-radius: .8vw;
+    font-family: 'Ranade-Medium';
+    font-size: 1.5vw;
     text-align: center;
     justify-content: center;
-    width: 40vw;
-    height: 4vw;
+    width: 32vw;
+    height: 3vw;
     margin: .8vw;
     text-decoration: none;
-    color: black;
+    color: #3f727a;
     text-transform: uppercase;
-    padding-top: 2vw;
+    padding-top: 1.5vw;
     letter-spacing: .2vw;
     font-weight: 600;
 }
