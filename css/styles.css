@@ -1,1 +1,52 @@
 /* My Styles */
+body {
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h1 a {
+    color: #d6886e;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2vw;
+    margin: auto;
+    max-width: 40vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+img {
+    max-width: 22%;
+}
+
+nav {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: .2vw solid #d6886e;
+    font-size: 2vw;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+    height: 4vw;
+    margin: .8vw;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 2vw;
+    letter-spacing: .2vw;
+    font-weight: 600;
+}
+
+.button:hover {
+    color: #d6886e;
+}
