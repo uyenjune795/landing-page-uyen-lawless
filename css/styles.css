@@ -2,7 +2,7 @@
 @import url(ranade.css);
 
 body {
-    background-color: #edeae3;
+    background-color: black;
     text-align: center;
     align-items: center;
 }
@@ -38,7 +38,7 @@ p {
 }
 
 img {
-    max-width: 22%;
+    max-width: 30%;
     border-radius: 1vw;
 }
 
