@@ -1,44 +1,52 @@
 /* My Styles */
 @import url(ranade.css);
+@import url(zodiak.css);
 
 body {
     background-color: #edeae3;
     text-align: center;
     align-items: center;
+    margin: auto;
+    max-width: 52vw;
 }
 
 h1 {
-    padding-top: .8vw;
-    padding-bottom: .8vw;
-    color:#3f727a;
-    font-size: 4.5vw;
-    font-family: 'Ranade-Medium';
-    text-transform: uppercase;
-    border-bottom: .175vw solid #d6886e;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    margin-bottom: 5vw;
-}
-
-h1 a {
-    color: #d6886e;
+    padding-top: .2vw;
+    color: #3f727a;
+    font-size: 4.8vw;
+    font-family: 'Zodiak-Black';
 }
 
 p {
     text-align: center;
     font-family: 'Ranade-Medium';
-    font-size: 1.2vw;
+    font-size: 1.25vw;
     margin: auto;
-    max-width: 42vw;
-    padding-top: 2.2vw;
+    padding-top: 1.8vw;
     letter-spacing: -.02vw;
-    padding-bottom: 2vw;
+    padding-bottom: 3.2vw;
     color: #4b4b4b;
     line-height: 1.8vw;
 }
 
+.intro {
+    padding-top: 2.8vw;
+    font-size: 2vw;
+    color: #d6886e;
+    font-family: 'Zodiak-Extrabold';
+}
+
+.translation {
+    margin-top: -3.1vw;
+    font-family: 'Ranade-BoldItalic';
+    font-size: 2.2vw;
+    color: #e9c97d;
+    margin-bottom: 2vw;
+    letter-spacing: .1vw;
+}
+
 img {
-    max-width: 30%;
+    max-width: 60%;
     border-radius: 1vw;
 }
 
@@ -55,25 +63,23 @@ nav {
     font-size: 1.5vw;
     text-align: center;
     justify-content: center;
-    width: 32vw;
+    width: 24vw;
     height: 3vw;
     margin: .8vw;
     text-decoration: none;
     color: #3f727a;
     text-transform: uppercase;
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
     letter-spacing: .2vw;
     font-weight: 600;
 }
 
 .button:hover {
-    color: #d6886e;
+    color: #e9c97d;
 }
 
 footer{
     margin-top: 3.5vw;
-    margin-left: 30vw;
-    margin-right: 30vw;
     padding-top: 1.5vw;
     padding-bottom: 1vw;
     font-family: 'Ranade-Medium';
