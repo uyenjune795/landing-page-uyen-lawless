@@ -1,25 +1,59 @@
 /* My Styles */
-@import url(ranade.css);
-@import url(zodiak.css);
+@import url(https://use.typekit.net/urm7wwq.css);
 
 body {
     background-color: #edeae3;
     text-align: center;
     align-items: center;
     margin: auto;
-    max-width: 52vw;
+}
+
+img {
+    height: 100vh;
+}
+
+.web-intro-arrow {
+    margin-top: -100vh;
+    opacity: 60%;
+}
+
+nav {
+    font-family: 'montserrat';
+    background-color: #edeae3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 0.4);
+    position: sticky; 
+    top: 0;
+    padding: 1em 2.5em;
+}
+
+nav a {
+    padding: 0 2em;
+    text-decoration: none;
+}
+
+nav img {
+    width: 22%;
 }
 
 h1 {
     padding-top: .2vw;
     color: #3f727a;
     font-size: 4.8vw;
-    font-family: 'Zodiak-Black';
+    font-family: 'lust';
+}
+
+.profile-image{
+    max-height: 40%;
 }
 
 p {
     text-align: center;
-    font-family: 'Ranade-Medium';
+    font-family: 'montserrat';
     font-size: 1.25vw;
     margin: auto;
     padding-top: 1.8vw;
@@ -36,6 +70,12 @@ p {
     font-family: 'Zodiak-Extrabold';
 }
 
+.contact-buttons {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .translation {
     margin-top: -3.1vw;
     font-family: 'Ranade-BoldItalic';
@@ -45,15 +85,9 @@ p {
     letter-spacing: .1vw;
 }
 
-img {
-    max-width: 60%;
+.profile-image {
+    max-height: 20%;
     border-radius: 1vw;
-}
-
-nav {
-    display: grid;
-    align-items: center;
-    justify-content: center;
 }
 
 .button {
