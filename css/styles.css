@@ -8,13 +8,15 @@ body {
     margin: auto;
 }
 
-img {
+.web-intro-bg {
+    width: 100%;
     height: 100vh;
 }
 
-.web-intro-arrow {
-    margin-top: -100vh;
-    opacity: 60%;
+.web-intro-text {
+    max-width: 68%;
+    margin-top: -250em;
+    padding-bottom: 10em;
 }
 
 nav {
