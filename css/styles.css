@@ -1,8 +1,15 @@
 /* My Styles */
 @import url(https://use.typekit.net/urm7wwq.css);
 
+:root {
+    --primary-color: #edeae3;
+    --secondary-color: #3f727a;
+    --tertiary-color: #d6886e;
+    --quaternary-color: #e9c97d;
+}
+
 body {
-    background-color: #edeae3;
+    background-color: var(--primary-color);
     text-align: center;
     align-items: center;
     margin: auto;
@@ -20,56 +27,114 @@ body {
 }
 
 nav {
+    box-sizing: border-box;
     font-family: 'montserrat';
-    background-color: #edeae3;
+    background-color: var(--primary-color);
+    margin-top: -1.4em;
+    padding: 0 8vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 2px 5px rgb(0 0 0 / 0.4);
+    box-shadow: 0px 2px 8px rgba(40, 52, 54, 0.2);
     position: sticky; 
     top: 0;
-    padding: 1em 2.5em;
-}
-
-nav a {
-    padding: 0 2em;
-    text-decoration: none;
-}
-
-nav img {
-    width: 22%;
 }
 
 h1 {
-    padding-top: .2vw;
-    color: #3f727a;
-    font-size: 4.8vw;
+    color: var(--secondary-color);
+    font-size: 2.8vw;
     font-family: 'lust';
 }
 
-.profile-image{
-    max-height: 40%;
+.name-to-about {
+    font-size: 3vw;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    letter-spacing: .2vw;
+    opacity: .9;
+}
+
+.name-to-about:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.navigate-div a {
+    padding: 0 .7em;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 1.6vw;
+    font-weight: 400;
+    letter-spacing: .05vw;
+    opacity: .9;
+}
+
+.navigate-div a:hover,
+.navigate-div a:active {
+    transform: scale(1.2);
+    font-weight: 600;
+    opacity: 1;
+}
+  
+  #home-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 10vw;
+    padding-bottom: 8vw;
+    cursor: default;
+  }
+
+.short-intro {
+    padding: 8vw 12vw;
+    display: flex;
+}
+
+
+.profile-image {
+    max-width: 34%;
+    border-radius: 1.5em;
+    border: 1vw solid var(--quaternary-color);
+}
+
+
+.short-intro-text {
+    text-align: left;
+    padding-left: 8.5vw;
+}
+
+.hello {
+    padding-top: 3vw;
+    font-size: 4vw;
+}
+
+h2 {
+    font-family:'montserrat';
+    font-style: italic;
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: var(--quaternary-color);
+    margin-top: -3.5vw;
+}
+
+h3 {
+    padding-top: 1.2vw;
+    font-family: 'montserrat';
+    font-weight: 650;
+    font-size: 1.7vw;
+    color: var(--tertiary-color);
 }
 
 p {
-    text-align: center;
     font-family: 'montserrat';
     font-size: 1.25vw;
-    margin: auto;
-    padding-top: 1.8vw;
-    letter-spacing: -.02vw;
-    padding-bottom: 3.2vw;
+    letter-spacing: .025vw;
     color: #4b4b4b;
-    line-height: 1.8vw;
-}
-
-.intro {
-    padding-top: 2.8vw;
-    font-size: 2vw;
-    color: #d6886e;
-    font-family: 'Zodiak-Extrabold';
+    line-height: 2vw;
+    text-align: justify;
+    width: 38vw;
+    line-height: 2.2vw;
 }
 
 .contact-buttons {
@@ -82,18 +147,13 @@ p {
     margin-top: -3.1vw;
     font-family: 'Ranade-BoldItalic';
     font-size: 2.2vw;
-    color: #e9c97d;
+    color: var(--quaternary-color);
     margin-bottom: 2vw;
     letter-spacing: .1vw;
 }
 
-.profile-image {
-    max-height: 20%;
-    border-radius: 1vw;
-}
-
 .button {
-    border: .2vw solid #d6886e;
+    border: .2vw solid var(--tertiary-color);
     border-radius: .8vw;
     font-family: 'Ranade-Medium';
     font-size: 1.5vw;
@@ -103,7 +163,7 @@ p {
     height: 3vw;
     margin: .8vw;
     text-decoration: none;
-    color: #3f727a;
+    color: var(--secondary-color);
     text-transform: uppercase;
     padding-top: 1.2vw;
     letter-spacing: .2vw;
@@ -111,15 +171,19 @@ p {
 }
 
 .button:hover {
-    color: #e9c97d;
+    color: var(--quaternary-color);
 }
 
 footer{
-    margin-top: 3.5vw;
-    padding-top: 1.5vw;
-    padding-bottom: 1vw;
-    font-family: 'Ranade-Medium';
-    font-size: 1.1vw;
-    color: #4b4b4b;
-    border-top: .175vw solid #d6886e;
+    margin-top: 3.2vw;
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    font-family: 'montserrat';
+    font-size: 1vw;
+    font-weight: 550;
+    letter-spacing: .01vw;
+    color: var(--secondary-color);
+    border-top: .175vw solid var(--tertiary-color);
 }
