@@ -42,12 +42,17 @@ nav {
     max-width: 6.5vw;
 }
 
+.logo-name img:hover {
+    transform: scale(1.2);
+}
+
 h1 {
     justify-content: flex-start;
     flex-grow: 1;
     color: var(--secondary-color);
     font-size: 2.8vw;
     font-family: 'lust';
+    cursor: default;
 }
 
 .name-to-about {
@@ -317,6 +322,7 @@ footer{
 
 .under-construction {
     text-align: center;
+    font-size: 1.4vw;
     font-family: 'montserrat';
     color: var(--quinary-color);
     padding: 19vw;
@@ -349,9 +355,4 @@ footer{
     text-decoration: none;
     font-weight: 700;
     color: var(--quaternary-color);
-}
-
-.portfolio-images img {
-    width: 100%;
-    margin: .5vw 0;
 }
