@@ -102,19 +102,12 @@ h1 {
     opacity: .95;
 }
 
-.web-intro-logo-ul {
-    max-width: 18%;
-    margin-top: -350vw;
-    margin-bottom: 27.8vw;
-    margin-left: 64.45vw;
-}
-
-.web-intro-logo-circle {
+.web-intro-round-logo {
     margin-top: -350vw;
     margin-bottom: 28.8vw;
     margin-left: 65.2vw;
-    max-width: 18%;
-    animation: rotation 10s infinite linear;
+    max-width: 15%;
+    animation: rotation 8s infinite ease-in-out;
 }
 
 @keyframes rotation {
@@ -136,7 +129,7 @@ h1 {
     font-family: 'lust';
     font-size: 1.8vw;
     line-height: 3.4vw;
-    background-color: #d6886ede;
+    background-color: #d6886ef0;
     color: var(--primary-color);
     margin: auto;
     margin-top: -8vw;
@@ -219,13 +212,6 @@ p {
     line-height: 2.2vw;
 }
 
-.contact-buttons {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    padding: 4vw 0;
-}
-
 .translation {
     margin-top: -3.1vw;
     font-family: 'Ranade-BoldItalic';
@@ -235,23 +221,28 @@ p {
     letter-spacing: .1vw;
 }
 
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vw 0 4vw 0;
+}
+
 .button {
     border: .2vw solid var(--secondary-color);
     border-radius: .8vw;
-    font-family: 'Ranade-Medium';
-    font-size: 1.5vw;
+    font-family: 'lust';
+    font-size: 1.4vw;
     text-align: center;
     justify-content: center;
-    width: 24vw;
-    height: 3vw;
     margin: .8vw;
     text-decoration: none;
     color: var(--tertiary-color);
-    text-transform: uppercase;
-    padding-top: 1.2vw;
+    padding: 1vw 4vw .8vw 4vw;
     letter-spacing: .2vw;
     font-weight: 600;
     margin-top: 2vw;
+    box-shadow: 2px 4px 10px rgba(40, 52, 54, 0.2);
 }
 
 .button:hover {
@@ -356,3 +347,59 @@ footer{
     font-weight: 700;
     color: var(--quaternary-color);
 }
+
+
+/*contact page*/
+.business-cards img {
+    float: none;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-menu {
+    margin-top: 5vw;
+}
+
+.contact-menu form {
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+}
+
+.contact-menu > form > button {
+    font-size: 1.8vw;
+    border: .2vw solid #3f727a;
+    border-radius: .6vw;
+    box-shadow: 2px 4px 10px rgba(40, 52, 54, 0.2);
+    color: var(--tertiary-color);
+    font-family: 'lust';
+    font-weight: 600;
+    padding: 1.2vw 2vw 1vw 2vw;
+    cursor: pointer;
+    margin-top: 2vw;
+  }
+
+.contact-menu > form > button:hover {
+    color: var(--quaternary-color);
+}
+
+.contact-menu form input,
+.contact-menu form textarea {
+    border: .2vw solid var(--tertiary-color);
+    border-radius: .8vw;
+    font-family: 'montserrat';
+    font-size: 1.2vw;
+    color: var(--tertiary-color);
+    padding: 2vw;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+.contact-menu form input:focus,
+.contact-menu form textarea:focus {
+    background: var(--quaternary-color);
+    border: .2vw solid var(--quaternary-color);
+  }
