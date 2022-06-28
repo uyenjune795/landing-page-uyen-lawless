@@ -218,6 +218,7 @@ p {
     display: grid;
     align-items: center;
     justify-content: center;
+    padding: 4vw 0;
 }
 
 .translation {
@@ -230,7 +231,7 @@ p {
 }
 
 .button {
-    border: .2vw solid var(--tertiary-color);
+    border: .2vw solid var(--secondary-color);
     border-radius: .8vw;
     font-family: 'Ranade-Medium';
     font-size: 1.5vw;
@@ -240,11 +241,12 @@ p {
     height: 3vw;
     margin: .8vw;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-transform: uppercase;
     padding-top: 1.2vw;
     letter-spacing: .2vw;
     font-weight: 600;
+    margin-top: 2vw;
 }
 
 .button:hover {
@@ -252,19 +254,18 @@ p {
 }
 
 footer{
-    margin-top: 3.2vw;
+    background-color: var(--tertiary-color);
     padding-top: 1.8vw;
     padding-bottom: 1.8vw;
-    margin-left: 22vw;
-    margin-right: 22vw;
     font-family: 'montserrat';
-    font-size: 1vw;
-    font-weight: 550;
-    letter-spacing: .01vw;
-    color: var(--secondary-color);
-    border-top: .175vw solid var(--tertiary-color);
+    font-size: 1.05vw;
+    font-weight: 500;
+    letter-spacing: .035vw;
+    color: var(--primary-color);
+    cursor: default;
 }
 
+/*Resume Page*/
 .resume-image {
     background-color: var(--secondary-color);
     margin-left: .4vw;
@@ -288,4 +289,69 @@ footer{
 .resume-mockups > .resume-mockup-3 {
     width: 99.25%;
     margin-top: .05vw;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+    font-family: 'lust';
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.question a {
+    display: block;
+    padding: 1.5vw 1.8vw 1.2vw 1.8vw;
+    border: .25vw solid #3f727a;
+    border-radius: 1.2vw;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    box-shadow: 2px 4px 10px rgba(40, 52, 54, 0.2);
+}
+
+.question a:hover {
+    color: var(--quaternary-color);
+}
+
+.under-construction {
+    text-align: center;
+    font-family: 'montserrat';
+    color: var(--quinary-color);
+    padding: 19vw;
+    cursor: default;
+}
+
+.under-const {
+    font-family: 'montserrat';
+    line-height: 2.4vw;
+    color: var(--quinary-color);
+    padding: 4vw;
+    width: 40vw;
+    margin: auto;
+    cursor: default;
+    font-size: 1.4vw;
+}
+
+.under-const a {
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
+
+.under-const > .gg-drive-link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+.under-const > .gg-drive-link:hover {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--quaternary-color);
+}
+
+.portfolio-images img {
+    width: 100%;
+    margin: .5vw 0;
 }
