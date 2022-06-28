@@ -6,6 +6,7 @@
     --secondary-color: #3f727a;
     --tertiary-color: #d6886e;
     --quaternary-color: #e9c97d;
+    --quinary-color: #263c40;
 }
 
 body {
@@ -13,25 +14,15 @@ body {
     text-align: center;
     align-items: center;
     margin: auto;
-}
-
-.web-intro-bg {
-    width: 100%;
-    height: 100vh;
-}
-
-.web-intro-text {
-    max-width: 68%;
-    margin-top: -250em;
-    padding-bottom: 10em;
+    scroll-behavior: smooth;
 }
 
 nav {
     box-sizing: border-box;
+    margin: 0;
     font-family: 'montserrat';
     background-color: var(--primary-color);
-    margin-top: -1.4em;
-    padding: 0 8vw;
+    padding: 0 5vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -42,52 +33,115 @@ nav {
     top: 0;
 }
 
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {
+    max-width: 6.5vw;
+}
+
 h1 {
+    justify-content: flex-start;
+    flex-grow: 1;
     color: var(--secondary-color);
     font-size: 2.8vw;
     font-family: 'lust';
 }
 
 .name-to-about {
-    font-size: 3vw;
+    font-size: 2.8vw;
     color: var(--tertiary-color);
     text-decoration: none;
-    letter-spacing: .2vw;
-    opacity: .9;
+    opacity: .95;
 }
 
 .name-to-about:hover {
-    transform: scale(1.2);
+    color: var(--quaternary-color);
     opacity: 1;
 }
 
 .navigate-div a {
-    padding: 0 .7em;
+    padding: 0 1.5vw;
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 1.6vw;
+    font-size: 1.35vw;
     font-weight: 400;
-    letter-spacing: .05vw;
-    opacity: .9;
+    letter-spacing: .02vw;
+    opacity: .95;
 }
 
-.navigate-div a:hover,
-.navigate-div a:active {
-    transform: scale(1.2);
+.navigate-div a:hover {
+    color: var(--quaternary-color);
     font-weight: 600;
     opacity: 1;
 }
-  
-  #home-menu {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding-top: 10vw;
-    padding-bottom: 8vw;
-    cursor: default;
-  }
 
-.short-intro {
-    padding: 8vw 12vw;
+.web-intro-bg {
+    width: 100%;
+    height: 45vw;
+    opacity: .85;
+}
+
+.web-intro-text {
+    padding-right: 22vw;
+    max-width: 52%;
+    margin-top: -250vw;
+    padding-bottom: 9.5vw;
+    opacity: .98;
+}
+
+.web-intro-logo {
+    display: inline-box;
+    opacity: .95;
+}
+
+.web-intro-logo-ul {
+    max-width: 18%;
+    margin-top: -350vw;
+    margin-bottom: 28.55vw;
+    margin-left: 64.45vw;
+}
+
+.web-intro-logo-circle {
+    margin-top: -350vw;
+    margin-bottom: 30vw;
+    margin-left: 65.5vw;
+    max-width: 18%;
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.prof-statement p {
+    box-sizing: border-box;
+    padding: 1.4vw 4vw;
+    border-radius: 1vw;
+    width: 46vw;
+    text-align: center;
+    letter-spacing: .02vw;
+    font-family: 'lust';
+    font-size: 1.8vw;
+    line-height: 3.4vw;
+    background-color: #d6886ede;
+    color: var(--primary-color);
+    margin: auto;
+    margin-top: -9vw;
+    opacity: .98;
+    cursor: default;
+    margin-bottom: 5vw;
+}
+
+#home-menu {
+    padding: 10vw 12vw 8vw 12vw;
     display: flex;
 }
 
@@ -96,8 +150,21 @@ h1 {
     max-width: 34%;
     border-radius: 1.5em;
     border: 1vw solid var(--quaternary-color);
+    animation: slideIn 2.5s ease;
 }
 
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        margin-left: -15%;
+        width: 300%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+      }
+}
 
 .short-intro-text {
     text-align: left;
@@ -121,16 +188,26 @@ h2 {
 h3 {
     padding-top: 1.2vw;
     font-family: 'montserrat';
-    font-weight: 650;
+    font-weight: 700;
     font-size: 1.7vw;
     color: var(--tertiary-color);
+}
+
+h3 a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
+
+h3 a:hover {
+    color: var(--secondary-color);
+    font-weight: 800;
 }
 
 p {
     font-family: 'montserrat';
     font-size: 1.25vw;
     letter-spacing: .025vw;
-    color: #4b4b4b;
+    color: var(--quinary-color);
     line-height: 2vw;
     text-align: justify;
     width: 38vw;
