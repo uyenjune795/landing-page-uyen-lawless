@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: #f6f3ee;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -21,7 +21,7 @@ nav {
     box-sizing: border-box;
     margin: 0;
     font-family: 'montserrat';
-    background-color: var(--primary-color);
+    background-color: #f6f3ee;
     padding: 0 5vw;
     display: flex;
     flex-direction: row;
@@ -100,7 +100,7 @@ h1 {
 .web-intro-logo-ul {
     max-width: 18%;
     margin-top: -350vw;
-    margin-bottom: 27.5vw;
+    margin-bottom: 27.8vw;
     margin-left: 64.45vw;
 }
 
@@ -263,4 +263,29 @@ footer{
     letter-spacing: .01vw;
     color: var(--secondary-color);
     border-top: .175vw solid var(--tertiary-color);
+}
+
+.resume-image {
+    background-color: var(--secondary-color);
+    margin-left: .4vw;
+    margin-right: .4vw;
+}
+
+.resume {
+    margin-top: 6vw;
+    width: 72%;
+    margin-bottom: 12vw;
+    box-shadow: 10px 18px 28px rgba(40, 52, 54, 0.5);
+}
+
+.resume-mockups img {
+    margin: auto;
+    float: none;
+    width: 49.5%;
+    margin-top: .35vw;
+}
+
+.resume-mockups > .resume-mockup-3 {
+    width: 99.25%;
+    margin-top: .05vw;
 }
