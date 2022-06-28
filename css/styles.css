@@ -150,7 +150,7 @@ h1 {
     max-width: 34%;
     border-radius: 1.5em;
     border: 1vw solid var(--quaternary-color);
-    animation: slideIn 2.5s ease;
+    animation: slideIn 6s ease-in-out;
 }
 
 @keyframes slideIn {
