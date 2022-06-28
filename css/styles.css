@@ -134,10 +134,10 @@ h1 {
     background-color: #d6886ede;
     color: var(--primary-color);
     margin: auto;
-    margin-top: -9vw;
+    margin-top: -8vw;
     opacity: .98;
     cursor: default;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
 }
 
 #home-menu {
