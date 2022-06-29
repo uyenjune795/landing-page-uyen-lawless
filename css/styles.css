@@ -19,7 +19,6 @@ body {
 
 nav {
     box-sizing: border-box;
-    margin: 0;
     font-family: 'montserrat';
     background-color: #f6f3ee;
     padding: 0 5vw;
@@ -31,6 +30,7 @@ nav {
     box-shadow: 0px 2px 8px rgba(40, 52, 54, 0.2);
     position: sticky; 
     top: 0;
+    height: 10vh;
 }
 
 .logo-name {
@@ -39,27 +39,27 @@ nav {
 }
 
 .logo-name img {
-    max-width: 6.5vw;
+    max-width: 5.5vw;
 }
 
 .logo-name img:hover {
-    transform: scale(1.2);
+    transform: scale(1.075);
 }
 
 h1 {
     justify-content: flex-start;
-    flex-grow: 1;
     color: var(--secondary-color);
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     font-family: 'lust';
     cursor: default;
+    margin-bottom: 1.2vw;
 }
 
 .name-to-about {
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     color: var(--tertiary-color);
     text-decoration: none;
-    opacity: .95;
+    opacity: .9;
 }
 
 .name-to-about:hover {
@@ -68,25 +68,26 @@ h1 {
 }
 
 .navigate-div a {
-    padding: 0 1.5vw;
+    padding: 0 1em;
+    font-family: 'montserrat';
     color: var(--tertiary-color);
     text-decoration: none;
-    font-size: 1.35vw;
-    font-weight: 400;
-    letter-spacing: .02vw;
+    font-size: 1.05vw;
+    font-weight: 550;
+    letter-spacing: .015vw;
     opacity: .95;
 }
 
 .navigate-div a:hover {
     color: var(--quaternary-color);
-    font-weight: 600;
+    font-weight: 500;
     opacity: 1;
 }
 
 .web-intro-bg {
     width: 100%;
-    height: 45vw;
-    opacity: .85;
+    height: 46vw;
+    opacity: 1;
 }
 
 .web-intro-text {
@@ -94,17 +95,15 @@ h1 {
     max-width: 52%;
     margin-top: -250vw;
     padding-bottom: 9.5vw;
-    opacity: .98;
 }
 
 .web-intro-logo {
     display: inline-box;
-    opacity: .95;
 }
 
 .web-intro-round-logo {
     margin-top: -350vw;
-    margin-bottom: 28.8vw;
+    margin-bottom: 30vw;
     margin-left: 65.2vw;
     max-width: 15%;
     animation: rotation 8s infinite ease-in-out;
@@ -123,17 +122,17 @@ h1 {
     box-sizing: border-box;
     padding: 1.4vw 4vw;
     border-radius: 1vw;
-    width: 46vw;
+    width: 38vw;
     text-align: center;
-    letter-spacing: .02vw;
+    letter-spacing: .05vw;
     font-family: 'lust';
-    font-size: 1.8vw;
-    line-height: 3.4vw;
-    background-color: #d6886ef0;
+    font-size: 1.35vw;
+    line-height: 3.2vw;
+    background-color: #d6886e;
     color: var(--primary-color);
     margin: auto;
     margin-top: -8vw;
-    opacity: .98;
+    opacity: .998;
     cursor: default;
     margin-bottom: 2vw;
 }
@@ -167,6 +166,7 @@ h1 {
 .short-intro-text {
     text-align: left;
     padding-left: 8.5vw;
+    cursor: default;
 }
 
 .hello {
@@ -180,7 +180,7 @@ h2 {
     font-size: 2.2vw;
     font-weight: 600;
     color: var(--quaternary-color);
-    margin-top: -3.5vw;
+    margin-top: -2vw;
 }
 
 h3 {
@@ -189,16 +189,6 @@ h3 {
     font-weight: 700;
     font-size: 1.7vw;
     color: var(--tertiary-color);
-}
-
-h3 a {
-    text-decoration: none;
-    color: var(--quaternary-color);
-}
-
-h3 a:hover {
-    color: var(--secondary-color);
-    font-weight: 800;
 }
 
 p {
@@ -313,7 +303,7 @@ footer{
 
 .under-construction {
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-family: 'montserrat';
     color: var(--quinary-color);
     padding: 19vw;
@@ -322,54 +312,76 @@ footer{
 
 .under-const {
     font-family: 'montserrat';
-    line-height: 2.4vw;
+    line-height: 2.2vw;
     color: var(--quinary-color);
     padding: 4vw;
-    width: 40vw;
     margin: auto;
     cursor: default;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+}
+
+.under-const p {
+    width: 36vw;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2.5vw;
+
 }
 
 .under-const a {
-    color: var(--tertiary-color);
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.under-const > .gg-drive-link {
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: 500;
+.under-const .button {
+    text-transform: uppercase;
 }
-
-.under-const > .gg-drive-link:hover {
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--quaternary-color);
-}
-
 
 /*contact page*/
 .business-cards img {
     float: none;
     width: 100%;
-    margin: auto;
+    padding-bottom: 2vw;
+}
+
+.contact-me h2 {
+    font-style: normal;
+    font-size: 1.6vw;
+    padding-top: 6vw;
+    color: var(--tertiary-color);
+    cursor: default;
+}
+
+.contact-me h1 {
+    margin-top: -.5vw;
+    color: var(--quaternary-color);
+    font-size: 2.8vw;
+    padding-bottom: 1.2vw;
 }
 
 .contact-menu {
-    margin-top: 5vw;
+    margin: auto;
+    float: none;
+}
+
+h4 {
+    font-family: 'montserrat';
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-align: left;
+    margin-bottom: .5vw;
+    font-size: 1.2vw;
 }
 
 .contact-menu form {
-    margin: auto;
-    width: 40%;
-    justify-content: center;
+    margin-left: 24vw;
+    max-width: 48%;
+    width: 100%;
 }
 
 .contact-menu > form > button {
     font-size: 1.8vw;
     border: .2vw solid #3f727a;
-    border-radius: .6vw;
+    border-radius: .8vw;
     box-shadow: 2px 4px 10px rgba(40, 52, 54, 0.2);
     color: var(--tertiary-color);
     font-family: 'lust';
@@ -377,7 +389,8 @@ footer{
     padding: 1.2vw 2vw 1vw 2vw;
     cursor: pointer;
     margin-top: 2vw;
-  }
+    margin-left: 4.2vw;
+}
 
 .contact-menu > form > button:hover {
     color: var(--quaternary-color);
@@ -388,8 +401,8 @@ footer{
     border: .2vw solid var(--tertiary-color);
     border-radius: .8vw;
     font-family: 'montserrat';
+    color: var(--secondary-color);
     font-size: 1.2vw;
-    color: var(--tertiary-color);
     padding: 2vw;
     top: 0;
     left: 0;
@@ -400,6 +413,6 @@ footer{
   
 .contact-menu form input:focus,
 .contact-menu form textarea:focus {
-    background: var(--quaternary-color);
     border: .2vw solid var(--quaternary-color);
+    color: var(--quinary-color);
   }
