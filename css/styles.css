@@ -87,7 +87,7 @@ h1 {
 .web-intro-bg {
     width: 100%;
     height: 46vw;
-    opacity: 1;
+    opacity: .998;
 }
 
 .web-intro-text {
@@ -95,6 +95,7 @@ h1 {
     max-width: 52%;
     margin-top: -250vw;
     padding-bottom: 9.5vw;
+    opacity: .998;
 }
 
 .web-intro-logo {
@@ -122,7 +123,7 @@ h1 {
     box-sizing: border-box;
     padding: 1.8vw 4vw;
     border-radius: 1vw;
-    width: 38vw;
+    max-width: 38vw;
     text-align: center;
     letter-spacing: .05vw;
     font-family: 'lust';
@@ -142,11 +143,10 @@ h1 {
     display: flex;
 }
 
-
 .profile-image {
     max-width: 34%;
     border-radius: 1.5em;
-    border: 1vw solid var(--quaternary-color);
+    border: 1.4vw solid var(--quaternary-color);
     animation: slideIn 6s ease-in-out;
 }
 
@@ -250,7 +250,72 @@ footer{
     cursor: default;
 }
 
-/*Resume Page*/
+/*About Page*/
+.intro {
+    display: flex;
+    float: none;
+    padding: 8vw 11vw 4vw 11vw;
+    text-align: left;
+}
+
+.intro img {
+    margin-top: -5.8vw;
+    height: 40vw;
+    border: 1.4vw solid var(--quaternary-color);
+    border-radius: 2vw;
+}
+
+.intro-description-1 {
+    padding: 4vw 10vw;
+    margin-top: -8vw;
+}
+
+.intro-description-1 h1 {
+    font-size: 3.2vw;
+    color: var(--tertiary-color);
+}
+
+.intro-description-1 h2 {
+    font-size: 1.6vw;
+    margin-top: -1.8vw;
+    margin-bottom: .5vw;
+}
+
+.intro-description-1 p {
+    width: 34vw;
+    font-size: 1.1vw;
+    text-align: left;
+}
+
+.intro-description-1 a {
+    font-size: 1.2vw;
+    font-weight: 650;
+    color: var(--secondary-color);
+}
+
+.intro-description-2 h1 {
+    margin-top: -2vw;
+    padding-top: 1.6vw;
+    padding-right: 11vw;
+    font-size: 3.2vw;
+    color: var(--tertiary-color);
+    text-align: right;
+}
+
+.intro-description-2 p {
+    padding-right: 11vw;
+    width: 33.5vw;
+    font-size: 1.1vw;
+    text-align: right;
+}
+
+.intro-description-2 a {
+    font-size: 1.2vw;
+    font-weight: 650;
+    color: var(--secondary-color);
+
+}
+
 .resume-image {
     background-color: var(--secondary-color);
     margin-left: .4vw;
