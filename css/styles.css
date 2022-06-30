@@ -30,7 +30,7 @@ nav {
     box-shadow: 0px 2px 8px rgba(40, 52, 54, 0.2);
     position: sticky; 
     top: 0;
-    height: 12vh;
+    height: 5.5vw;
 }
 
 .logo-name {
@@ -51,19 +51,19 @@ h1 {
     color: var(--secondary-color);
     font-size: 2.4vw;
     font-family: 'lust';
-    cursor: default;
+    -webkit-text-stroke: .02vw var(--secondary-color);
     margin-bottom: 1.2vw;
 }
 
-.name-to-about {
+.logo-name h1 a {
     font-size: 2.4vw;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     opacity: .9;
 }
 
-.name-to-about:hover {
-    color: var(--quaternary-color);
+.logo-name h1 a:hover {
+    color: var(--tertiary-color);
     opacity: 1;
 }
 
@@ -98,15 +98,24 @@ h1 {
     opacity: .998;
 }
 
+.web-intro-arrow {
+    margin-top: -100vw;
+    padding-bottom: 4vw;
+    opacity: .72;
+    width: 10%;
+
+}
+
 .web-intro-logo {
     display: inline-box;
 }
 
 .web-intro-round-logo {
     margin-top: -350vw;
-    margin-bottom: 30vw;
+    margin-bottom: 30.5vw;
     margin-left: 65.2vw;
     max-width: 15%;
+    opacity: .92;
     animation: rotation 8s infinite ease-in-out;
 }
 
@@ -121,25 +130,24 @@ h1 {
 
 .prof-statement p {
     box-sizing: border-box;
-    padding: 1.8vw 4vw;
+    padding: 2.2vw 6vw;
     border-radius: 1vw;
-    max-width: 38vw;
+    border: .6vw double var(--tertiary-color);
+    width: 50vw;
     text-align: center;
     letter-spacing: .05vw;
     font-family: 'lust';
-    font-size: 1.4vw;
+    font-weight: 550;
+    font-size: 1.8vw;
     line-height: 3vw;
-    background-color: #d6886e;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    -webkit-text-stroke: .02vw var(--secondary-color);
     margin: auto;
-    margin-top: -7.2vw;
-    opacity: .998;
     cursor: default;
-    margin-bottom: 2vw;
 }
 
 #home-menu {
-    padding: 10vw 12vw 8vw 12vw;
+    padding: 8vw 12vw 8vw 12vw;
     display: flex;
 }
 
@@ -240,8 +248,8 @@ p {
 
 footer{
     background-color: var(--tertiary-color);
-    padding-top: 1.8vw;
-    padding-bottom: 1.8vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
     font-family: 'montserrat';
     font-size: 1.05vw;
     font-weight: 500;
@@ -271,6 +279,7 @@ footer{
 }
 
 .intro-description-1 h1 {
+    -webkit-text-stroke: .02vw var(--tertiary-color);
     font-size: 3.2vw;
     color: var(--tertiary-color);
 }
@@ -298,6 +307,7 @@ footer{
     padding-top: 1.6vw;
     padding-right: 11vw;
     font-size: 3.2vw;
+    -webkit-text-stroke: .02vw var(--tertiary-color);
     color: var(--tertiary-color);
     text-align: right;
 }
@@ -313,27 +323,38 @@ footer{
     font-size: 1.2vw;
     font-weight: 650;
     color: var(--secondary-color);
-
 }
 
-.resume-image {
-    background-color: var(--secondary-color);
-    margin-left: .4vw;
-    margin-right: .4vw;
-}
-
-.resume {
-    margin-top: 6vw;
-    width: 72%;
-    margin-bottom: 12vw;
-    box-shadow: 10px 18px 28px rgba(40, 52, 54, 0.5);
-}
-
-.resume-mockups img {
+.resume-service {
     margin: auto;
+}
+
+.resume-service h1 {
+    padding-top: 6vw;
+}
+
+.resume-service img {
     float: none;
-    width: 49.5%;
-    margin-top: .35vw;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+.resume-service p {
+    padding-top: 2vw;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 550;
+    color: var(--quinary-color);
+}
+
+.resume-service p a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.resume-service p a:hover {
+    color: var(--quaternary-color);
 }
 
 .resume-mockups > .resume-mockup-3 {
