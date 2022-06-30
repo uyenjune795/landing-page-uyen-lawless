@@ -55,16 +55,17 @@ h1 {
     margin-bottom: 1.2vw;
 }
 
-.logo-name h1 a {
-    font-size: 2.4vw;
-    color: var(--secondary-color);
+h1 a {
     text-decoration: none;
-    opacity: .9;
+    color: var(--secondary-color);    
+    -webkit-text-stroke: .02vw var(--secondary-color);
 }
 
 .logo-name h1 a:hover {
     color: var(--tertiary-color);
     opacity: 1;
+    -webkit-text-stroke: .02vw var(--tertiary-color);
+
 }
 
 .navigate-div a {
@@ -378,12 +379,15 @@ footer{
     border: .25vw solid #3f727a;
     border-radius: 1.2vw;
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--tertiary-color);    
+    -webkit-text-stroke: .02vw var(--tertiary-color);
     box-shadow: 2px 4px 10px rgba(40, 52, 54, 0.2);
 }
 
 .question a:hover {
     color: var(--quaternary-color);
+    -webkit-text-stroke: .02vw var(--quaternary-color);
+
 }
 
 .under-construction {
