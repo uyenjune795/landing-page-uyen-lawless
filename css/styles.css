@@ -129,23 +129,76 @@ h1 a {
   }
 }
 
-.prof-statement p {
-    box-sizing: border-box;
-    padding: 2.2vw 6vw;
-    border-radius: 1vw;
-    border: .6vw double var(--tertiary-color);
-    width: 50vw;
-    text-align: center;
-    letter-spacing: .05vw;
-    font-family: 'lust';
-    font-weight: 550;
-    font-size: 1.8vw;
-    line-height: 3vw;
-    color: var(--secondary-color);
-    -webkit-text-stroke: .02vw var(--secondary-color);
-    margin: auto;
-    cursor: default;
+.prof-statement {
+    padding-bottom: 4vw;
 }
+
+.prof-statement h1 {
+    font-size: 3vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.prof-statement h1:nth-child(1){
+    margin-left: 10vw;
+    width: 68.8%;
+    border-right: .4vw solid var(--quaternary-color);
+    animation: 
+    typing 4.5s steps(45, end);
+    animation-fill-mode: forwards;
+}
+
+.prof-statement h1:nth-child(2){
+    padding-top: 1vw;
+    margin-left: 20vw;
+    width: 67.5%;
+    opacity: 0;
+    display: flex;
+    font-size: 3vw;
+    border-right: .4vw solid var(--quaternary-color);
+    animation: 
+    typing2 4.8s steps(45, end),
+    blink-caret .8s step-end infinite;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+    0% {
+        width: 0;
+      }
+      99.9% {
+        border-right: .4vw solid var(--quaternary-color);
+      }
+      100% {
+        border: none;
+      }
+}
+
+@keyframes typing2 {
+    0% {
+        width: 0;
+      }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .4vw solid var(--quaternary-color);
+    }
+    100% {
+        opacity: 1;
+        border-right: .4vw solid var(--quaternary-color);
+    }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--quaternary-color) }
+  }
+  
 
 #home-menu {
     padding: 8vw 12vw 8vw 12vw;
