@@ -142,8 +142,9 @@ h1 a {
 
 .prof-statement h1:nth-child(1){
     margin-left: 10vw;
-    width: 68.8%;
-    border-right: .4vw solid var(--quaternary-color);
+    width: 100%;
+    max-width: 68.8%;
+    border-right: .4vw solid #f9dd9ddc;
     animation: 
     typing 2.5s steps(30, end);
     animation-fill-mode: forwards;
@@ -152,14 +153,15 @@ h1 a {
 .prof-statement h1:nth-child(2){
     padding-top: 1vw;
     margin-left: 20vw;
-    width: 67.5%;
+    width: 100%;
+    max-width: 67.5%;
     opacity: 0;
     display: flex;
     font-size: 3vw;
-    border-right: .4vw solid var(--quaternary-color);
+    border-right: .4vw solid #f9dd9ddc;
     animation: 
     typing2 2.5s steps(30, end),
-    blink-caret .8s step-end infinite;
+    blink-caret 1s step-end infinite;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
@@ -170,7 +172,7 @@ h1 a {
         width: 0;
       }
       99.9% {
-        border-right: .4vw solid var(--quaternary-color);
+        border-right: .4vw solid #f9dd9ddc;
       }
       100% {
         border: none;
@@ -185,55 +187,18 @@ h1 a {
         opacity: 1;
     }
     99.9% {
-        border-right: .4vw solid var(--quaternary-color);
+        border-right: .4vw solid #f9dd9ddc;
     }
     100% {
         opacity: 1;
-        border-right: .4vw solid var(--quaternary-color);
+        border-right: .4vw solid #f9dd9ddc;
     }
 }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: var(--quaternary-color) }
-  }
-  
-
-#home-menu {
-    padding: 8vw 12vw 8vw 12vw;
-    display: flex;
-}
-
-.profile-image {
-    max-width: 34%;
-    border-radius: 1.5em;
-    border: 1.4vw solid var(--quaternary-color);
-    animation: slideIn 6s ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        margin-left: -15%;
-        width: 300%;
-    }
-    to {
-        opacity: 1;
-        margin-left: 0%;
-        width: 100%;
-      }
-}
-
-.short-intro-text {
-    text-align: left;
-    padding-left: 8.5vw;
-    cursor: default;
-}
-
-.hello {
-    padding-top: 3vw;
-    font-size: 4vw;
+    40% { border-color: #f9dd9ddc }
 }
 
 h2 {
@@ -324,20 +289,20 @@ footer{
 
 .intro img {
     margin-top: -5.8vw;
-    height: 40vw;
+    height: 38vw;
     border: 1.4vw solid var(--quaternary-color);
     border-radius: 2vw;
 }
 
 .intro-description-1 {
-    padding: 4vw 10vw;
+    padding: 2.5vw 10vw;
     margin-top: -8vw;
 }
 
 .intro-description-1 h1 {
-    -webkit-text-stroke: .02vw var(--tertiary-color);
-    font-size: 3.2vw;
-    color: var(--tertiary-color);
+    -webkit-text-stroke: .02vw var(--secondary-color);
+    font-size: 3.5vw;
+    color: var(--secondary-color);
 }
 
 .intro-description-1 h2 {
@@ -346,39 +311,45 @@ footer{
     margin-bottom: .5vw;
 }
 
-.intro-description-1 p {
-    width: 34vw;
-    font-size: 1.1vw;
-    text-align: left;
-}
-
-.intro-description-1 a {
-    font-size: 1.2vw;
-    font-weight: 650;
+.intro-description-1 h3 {
+    font-size: 1.4vw;
+    font-weight: 550;
+    margin-top: -.2vw;
     color: var(--secondary-color);
 }
 
+.intro-description-1 p {
+    width: 34vw;
+    font-size: .95vw;
+    text-align: left;
+    color: var(--quinary-color);
+}
+
+.intro-description-1 a {
+    font-size: 1.12vw;
+    font-weight: 650;
+    color: var(--tertiary-color);
+}
+
 .intro-description-2 h1 {
-    margin-top: -2vw;
-    padding-top: 1.6vw;
+    margin-top: -3.2vw;
     padding-right: 11vw;
     font-size: 3.2vw;
-    -webkit-text-stroke: .02vw var(--tertiary-color);
-    color: var(--tertiary-color);
+    -webkit-text-stroke: .02vw var(--secondary-color);
     text-align: right;
 }
 
 .intro-description-2 p {
     padding-right: 11vw;
-    width: 33.5vw;
-    font-size: 1.1vw;
+    width: 32.5vw;
+    font-size: .95vw;
     text-align: right;
 }
 
 .intro-description-2 a {
-    font-size: 1.2vw;
+    font-size: 1.12vw;
     font-weight: 650;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .resume-service {
@@ -386,7 +357,7 @@ footer{
 }
 
 .resume-service h1 {
-    padding-top: 6vw;
+    padding-top: 4vw;
 }
 
 .resume-service img {
@@ -442,7 +413,6 @@ footer{
 .question a:hover {
     color: var(--quaternary-color);
     -webkit-text-stroke: .02vw var(--quaternary-color);
-
 }
 
 .under-construction {
